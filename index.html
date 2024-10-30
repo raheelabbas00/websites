@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <style>
+      .line {
+        width: 30px;
+        height: 5px;
+        background-color: green;
+      }
+
+      .container-fluid {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .collapse {
+        margin-left: 34%;
+        font-size: 20px;
+        padding-left: 0px;
+        transition: 2s;
+      }
+      .collapse a:hover {
+        color: rgb(11, 173, 11);
+        cursor: pointer;
+      }
+      .navbar-collapse ul li {
+        padding-left: 8px;
+      }
+      .edit a {
+        margin: 0px;
+        padding: 0px;
+      }
+      .container-fluid {
+        padding: 2%;
+      }
+      .container .edit .navbar-brand {
+        font-size: 30%;
+      }
+      .navbar {
+        position: sticky;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+      <div class="container-fluid">
+        <div class="edit">
+          <a class="navbar-brand" href="#"
+            ><p style="font-size: 30px; color: rgba(6, 6, 75, 0.89)">
+              Active.
+            </p></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                ><p style="color: green">Home</p></a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container bg-white">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card" style="width: 25rem; border: none">
+            <div class="card-body p-5">
+              <p class="card-text">Welcome</p>
+              <h2 class="card-title mytitle" style="color: #2d465e">
+                Excepteur sint occaecat cupidatat non proident
+              </h2>
+              <p class="card-text">
+                Far far away, behind the word mountains, far from the countries
+                Vokalia and Consonantia, there live the blind texts. Separated
+                they live in Bookmarksgrove right at the coast of the Semantics,
+                a large language ocean
+              </p>
+              <a href="#" class="btn btn-success">Get Started</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div
+            id="carouselExampleSlidesOnly"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="https://bootstrapmade.com/demo/templates/Active/assets/img/img_h_8.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://bootstrapmade.com/demo/templates/Active/assets/img/img_h_6.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://bootstrapmade.com/demo/templates/Active/assets/img/img_h_7.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container d-flex justify-content-around pt-5">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card" style="width: 22rem; border: none">
+            <div class="card-body">
+              <p class="card-text">Our mission</p>
+              <h5 class="card-title" style="color: #2d465e">
+                The Big Oxmox advised her not to do so, because there were
+                thousands.
+              </h5>
+              <p class="card-text" style="font-size: 20px">
+                A small river named Duden flows by their place and supplies it
+                with the necessary regelialia. It is a paradisematic country.
+              </p>
+              <p class="card-text">
+                The Big Oxmox advised her not to do so, because there were
+                thousands of bad Commas, wild Question Marks and devious
+                Semikoli.
+              </p>
+              <a href="#" class="btn btn-success">Get Started</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card" style="width: 22rem; border: none">
+            <img
+              src="https://bootstrapmade.com/demo/templates/Active/assets/img/img_v_3.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container d-flex justify-content-around p-4">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem; border: none">
+            <img
+              src="tech.PNG"
+              class="card-img-top"
+              style="height: 100px; width: 100px"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title" style="color: #2d465e">Technology</h5>
+              <p class="card-text">
+                Separated they live in Bookmarksgrove right at the coast
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem; border: none">
+            <img
+              src="web.PNG"
+              class="card-img-top"
+              style="height: 100px; width: 100px"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title" style="color: #2d465e">Web Designing</h5>
+              <p class="card-text">
+                Separated they live in Bookmarksgrove right at the coast
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem; border: none">
+            <img
+              src="brand.PNG"
+              class="card-img-top"
+              style="height: 100px; width: 100px"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title" style="color: #2d465e">Branding</h5>
+              <p class="card-text">
+                Separated they live in Bookmarksgrove right at the coast
+              </p>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container d-flex justify-content-around">
+      <div class="row">
+        <div class="col-md-6">
+          <img
+            src="https://bootstrapmade.com/demo/templates/Active/assets/img/img_v_1.jpg"
+            class="img-fluid"
+            style="width: 22rem"
+          />
+        </div>
+        <div class="col-md-6">
+          <div class="card" style="width: 25rem; border: none">
+            <div class="card-body">
+              <h6 class="card-subtitle mb-2 text-body-secondary">Why Us</h6>
+              <h4 class="card-title" style="color: #2d465e">
+                Far far away Behind the Word Mountains
+              </h4>
+              <p class="card-text" style="font-size: 20px">
+                Far far away, behind the word mountains, far from the countries
+                Vokalia and Consonantia.
+              </p>
+              <p class="card-text">
+                There live the blind texts. Separated they live in
+                Bookmarksgrove right at the coast of the Semantics, a large
+                language ocean.
+              </p>
+              <div class="box">
+                <div class="row">
+                  <div class="col-md-4">
+                    <p style="color: #2d465e; font-size: 28px">3319</p>
+                    <div class="line"></div>
+                    <p>Coffee</p>
+                  </div>
+                  <div class="col-md-4">
+                    <p style="color: #2d465e; font-size: 28px">2831</p>
+                    <div class="line"></div>
+                    <p>Codes</p>
+                  </div>
+                  <div class="col-md-4">
+                    <p style="color: #2d465e; font-size: 28px">1914</p>
+                    <div class="line"></div>
+                    <p>Projects</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container pt-5">
+      <div class="row">
+        <div class="col-md-12 text-center" style="font-size: 20px">
+          Recent Posts
+        </div>
+      </div>
+      <div class="row">
+        <div
+          class="col-md-12 text-center"
+          style="color: #2d465e; font-size: 35px"
+        >
+          Blog Posts
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card" style="width: 20rem; border: none">
+            <img
+              src="https://bootstrapmade.com/demo/templates/Active/assets/img/img_h_4.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-title" style="color: #2d465e">
+                DEVELOPMENT July 20,2020
+              </p>
+              <h5 class="card-title" style="color: #2d465e">
+                There live the blind texts they live
+              </h5>
+              <p class="card-text" style="font-size: 18px">
+                Far far away, behind the word mountains, far from the countries
+                Vokalia and Consonantia, there live the blind texts.
+              </p>
+              <div class="box">
+                <div class="row">
+                  <div class="col-md-3">
+                    <img
+                      src="https://bootstrapmade.com/demo/templates/Active/assets/img/team/team-3.jpg"
+                      class="card-img-top"
+                      style="height: 60px; width: 60px; border-radius: 50%"
+                    />
+                  </div>
+                  <div class="col-md-9 pl-2">
+                    <h6 class="card-title" style="color: #2d465e">
+                      Winston Gold
+                    </h6>
+                    <p class="card-text" style="font-size: 15px; color: grey">
+                      Lead Product Designer.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card" style="width: 20rem; border: none">
+            <img
+              src="https://bootstrapmade.com/demo/templates/Active/assets/img/img_h_2.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-title" style="color: #2d465e">
+                DEVELOPMENT July 20,2020
+              </p>
+              <h5 class="card-title" style="color: #2d465e">
+                There live the blind texts they live
+              </h5>
+              <p class="card-text" style="font-size: 18px">
+                Far far away, behind the word mountains, far from the countries
+                Vokalia and Consonantia, there live the blind texts.
+              </p>
+              <div class="box">
+                <div class="row">
+                  <div class="col-md-3">
+                    <img
+                      src="https://bootstrapmade.com/demo/templates/Active/assets/img/team/team-2.jpg"
+                      class="card-img-top"
+                      style="height: 60px; width: 60px; border-radius: 50%"
+                    />
+                  </div>
+                  <div class="col-md-9 pl-2">
+                    <h6 class="card-title" style="color: #2d465e">
+                      Winston Gold
+                    </h6>
+                    <p class="card-text" style="font-size: 15px; color: grey">
+                      Lead Product Designer.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card" style="width: 20rem; border: none">
+            <img
+              src="https://bootstrapmade.com/demo/templates/Active/assets/img/img_h_3.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-title" style="color: #2d465e">
+                DEVELOPMENT July 20,2020
+              </p>
+              <h5 class="card-title" style="color: #2d465e">
+                There live the blind texts they live
+              </h5>
+              <p class="card-text" style="font-size: 18px">
+                Far far away, behind the word mountains, far from the countries
+                Vokalia and Consonantia, there live the blind texts.
+              </p>
+              <div class="box">
+                <div class="row">
+                  <div class="col-md-3">
+                    <img
+                      src="https://bootstrapmade.com/demo/templates/Active/assets/img/team/team-1.jpg"
+                      class="card-img-top"
+                      style="height: 60px; width: 60px; border-radius: 50%"
+                    />
+                  </div>
+                  <div class="col-md-9 pl-2">
+                    <h6 class="card-title" style="color: #2d465e">
+                      Winston Gold
+                    </h6>
+                    <p class="card-text" style="font-size: 15px; color: grey">
+                      Lead Product Designer.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container pt-5">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-6" style="display: flex">
+              <div class="mgimg">
+                <img
+                  src="bag.PNG"
+                  style="height: 70px; width: 60px"
+                  class="container-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="col" style="width: 80%; padding-left: 10px">
+                <h5 class="card-title" style="color: #2d465e; font-size: 16px">
+                  Sell Product
+                </h5>
+                <p>Far far away,behind the word is nothing</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6" style="display: flex">
+              <div class="mgimg">
+                <img
+                  src="techcase.PNG"
+                  style="height: 70px; width: 70px"
+                  class="container-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="col" style="width: 80%; padding-left: 10px">
+                <h5 class="card-title" style="color: #2d465e; font-size: 16px">
+                  Success Everyday
+                </h5>
+                <p>Far far away,behind the word is nothing</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6" style="display: flex">
+              <div class="mgimg">
+                <img
+                  src="tv.PNG"
+                  style="height: 70px; width: 70px"
+                  class="container-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="col" style="width: 80%; padding-left: 10px">
+                <h5 class="card-title" style="color: #2d465e; font-size: 16px">
+                  Bring ideas to life
+                </h5>
+                <p>Far far away,behind the word is nothing</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6" style="display: flex">
+              <div class="mgimg">
+                <img
+                  src="alarm.PNG"
+                  style="height: 70px; width: 60px"
+                  class="container-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="col" style="width: 80%; padding-left: 10px">
+                <h5 class="card-title" style="color: #2d465e; font-size: 16px">
+                  Modern and Clean Design
+                </h5>
+                <p>Far far away,behind the word is nothing</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div
+            id="carouselExampleSlidesOnly"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="https://bootstrapmade.com/demo/templates/Active/assets/img/img_h_4.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://bootstrapmade.com/demo/templates/Active/assets/img/img_h_1.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://bootstrapmade.com/demo/templates/Active/assets/img/img_h_3.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="carousel-item">
+                  <img
+                    src="https://bootstrapmade.com/demo/templates/Active/assets/img/img_h_2.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container p-5">
+      <div class="row d-flex jusitfy-content-between">
+        <div class="col-md-4">
+          <div class="card" style="width: 20rem; border: none">
+            <div class="card-body">
+              <h6 class="card-title" style="color: grey">Our Services</h6>
+              <h5 class="card-title" style="color: #2d465e">
+                Far far away, behind the word mountains, far from the countries
+                Vokalia
+              </h5>
+              <p class="card-text">
+                Far far away, behind the word mountains, far from the countries
+                Vokalia and Consonantia, there live the blind texts.
+              </p>
+              <p class="card-text">
+                Separated they live in Bookmarksgrove right at the coast of the
+                Semantics, a large language ocean.
+              </p>
+              <a href="#" class="btn btn-success">Get Strated</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="box" style="padding-left: 20px">
+            <div class="row p-3 ml-5">
+              <div class="col-md-4">
+                <div class="card" style="width: 16rem; border: none">
+                  <img
+                    src="square.PNG"
+                    class="card-img-top"
+                    style="height: 50px; width: 70px"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title" style="color: #2d465e">Sqaure</h5>
+                    <p class="card-text">
+                      Separated they live in Bookmarksgrove right at the coast
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card" style="width: 16rem; border: none">
+                  <img
+                    src="Capture.PNG"
+                    class="card-img-top"
+                    style="height: 50px; width: 70px"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title" style="color: #2d465e">
+                      Technology
+                    </h5>
+                    <p class="card-text">
+                      Separated they live in Bookmarksgrove right at the coast
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row p-3 ml-5">
+              <div class="col-md-4">
+                <div class="card" style="width: 16rem; border: none">
+                  <img
+                    src="brill.PNG"
+                    class="card-img-top"
+                    style="height: 50px; width: 70px"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title" style="color: #2d465e">Brillant</h5>
+                    <p class="card-text">
+                      Separated they live in Bookmarksgrove right at the coast
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card" style="width: 16rem; border: none">
+                  <img
+                    src="loop.PNG"
+                    class="card-img-top"
+                    style="height: 60px; width: 70px"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title" style="color: #2d465e">Blueprint</h5>
+                    <p class="card-text">
+                      Separated they live in Bookmarksgrove right at the coast
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container p-5 bg-secondary-subtle">
+      <div class="row">
+        <div class="col-md-12 text-center">Plans</div>
+      </div>
+      <div class="row pb-5">
+        <div
+          class="col-md-12 text-center"
+          style="color: #2d465e; font-size: 25px"
+        >
+          Pricing Table
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 pt-5 pb-5 bg-white">
+            <p style="color: #2d465e; font-size: 15px; text-align: center">
+              <b>Free</b>
+            </p>
+            <p style="text-align: center; font-size: 15px; color: grey">
+              <sup style="color: green; font-size: 20px"><b>$</b></sup
+              ><b style="color: green; font-size: 30px">0</b>/month
+            </p>
+            <p style="text-align: center; font-size: 15px">Aida dere</p>
+            <p style="text-align: center; font-size: 15px">Nec feugiat nisl</p>
+            <p style="text-align: center; font-size: 15px">
+              Nulla at volutpat dola
+            </p>
+            <p style="text-align: center; font-size: 15px; color: grey">
+              <strike>Pharetra massa </strike>
+            </p>
+            <p style="text-align: center; font-size: 15px; color: grey">
+              <strike>Massa ultricies mi</strike>
+            </p>
+            <center>
+              <button type="button" class="btn btn-outline-success text-center">
+                Get Started
+              </button>
+            </center>
+          </div>
+          <div class="col-md-4 pt-5 pb-5 bg-white">
+            <p style="color: #2d465e; font-size: 15px; text-align: center">
+              <b>Business</b>
+            </p>
+            <p style="text-align: center; font-size: 15px; color: grey">
+              <sup style="color: green; font-size: 20px"><b>$</b></sup
+              ><b style="color: green; font-size: 30px">19</b>/month
+            </p>
+            <p style="text-align: center; font-size: 15px">Aida dere</p>
+            <p style="text-align: center; font-size: 15px">Nec feugiat nisl</p>
+            <p style="text-align: center; font-size: 15px">
+              Nulla at volutpat dola
+            </p>
+            <p style="text-align: center; font-size: 15px">Pharetra massa</p>
+            <p style="text-align: center; font-size: 15px; color: grey">
+              <strike>Massa ultricies mi</strike>
+            </p>
+            <center>
+              <button type="button" class="btn btn-success">Get Started</button>
+            </center>
+          </div>
+          <div class="col-md-4 pt-5 pb-5 bg-white">
+            <p style="color: #2d465e; font-size: 15px; text-align: center">
+              <b>Developer</b>
+            </p>
+            <p style="text-align: center; font-size: 15px; color: grey">
+              <sup style="color: green; font-size: 20px"><b>$</b></sup
+              ><b style="color: green; font-size: 30px">29</b>/month
+            </p>
+            <p style="text-align: center; font-size: 15px">Aida dere</p>
+            <p style="text-align: center; font-size: 15px">Nec feugiat nisl</p>
+            <p style="text-align: center; font-size: 15px">
+              Nulla at volutpat dola
+            </p>
+            <p style="text-align: center; font-size: 15px">Pharetra massa</p>
+            <p style="text-align: center; font-size: 15px">
+              Massa ultricies mi
+            </p>
+            <center>
+              <button type="button" class="btn btn-outline-success text-center">
+                Get Started
+              </button>
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container p-5">
+      <div class="row">
+        <div class="col-md-12 text-center">Plans</div>
+      </div>
+      <div class="row">
+        <div
+          class="col-md-12 text-center"
+          style="color: #2d465e; font-size: 20px"
+        >
+          <b>Frequently Asked Questions</b>
+        </div>
+      </div>
+      <div
+        class="container pt-5"
+        style="border: 0.5px solid rgb(227, 226, 226)"
+      >
+        <div class="row">
+          <div class="col-md-12 pl-5">
+            <p style="font-size: 20px">How to Download and Register?</p>
+          </div>
+          <div class="col-md-12 pl-5">
+            <p style="font-size: 20px">How to create your paypal account?</p>
+          </div>
+          <div class="col-md-12 pl-5">
+            <p style="font-size: 20px">
+              How to Link your Bank and Paypal Account?
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container pt-3">
+      <div class="row">
+        <div class="col-md-12 text-center">Happy Customer</div>
+      </div>
+      <div class="row">
+        <div
+          class="col-md-12 text-center"
+          style="color: #2d465e; font-size: 20px"
+        >
+          <b>Testimonials</b>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 p-5 w-30% text-center">
+          <div
+            id="carouselExampleSlidesOnly"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="card" style="width: 100%; border: none">
+                  <center>
+                    <img
+                      src="https://bootstrapmade.com/demo/templates/Active/assets/img/testimonials/testimonials-2.jpg"
+                      class="card-img-top"
+                      alt="..."
+                      style="height: 80px; width: 80px; border-radius: 50%"
+                    />
+                  </center>
+                  <div class="card-body">
+                    <h5
+                      class="card-title"
+                      style="text-align: center; color: #2d465e; font: 20px"
+                    >
+                      Lukas Devlin
+                    </h5>
+                    <p class="card-text" style="text-align: center">
+                      There lives the blind text.There lives the blind text
+                      Separated they live in bookmarksgrove right at the cost of
+                      semnatics, a large language ocean.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card" style="width: 100%; border: none">
+                  <center>
+                    <img
+                      src="https://bootstrapmade.com/demo/templates/Active/assets/img/testimonials/testimonials-3.jpg"
+                      class="card-img-top"
+                      alt="..."
+                      style="height: 80px; width: 80px; border-radius: 50%"
+                    />
+                  </center>
+                  <div class="card-body">
+                    <h5
+                      class="card-title"
+                      style="text-align: center; color: #2d465e; font: 20px"
+                    >
+                      Kyrla Byrant
+                    </h5>
+                    <p class="card-text" style="text-align: center">
+                      There lives the blind text.There lives the blind text
+                      Separated they live in bookmarksgrove right at the cost of
+                      semnatics, a large language ocean.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card" style="width: 100%; border: none">
+                  <center>
+                    <img
+                      src="https://bootstrapmade.com/demo/templates/Active/assets/img/testimonials/testimonials-1.jpg"
+                      class="card-img-top"
+                      alt="..."
+                      style="height: 80px; width: 80px; border-radius: 50%"
+                    />
+                  </center>
+                  <div class="card-body">
+                    <h5
+                      class="card-title"
+                      style="text-align: center; color: #2d465e; font: 20px"
+                    >
+                      Adam Anderson
+                    </h5>
+                    <p class="card-text" style="text-align: center">
+                      There lives the blind text. There lives the blind
+                      textSeparated they live in bookmarksgrove right at the
+                      cost of semnatics, a large language ocean.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cconatiner p-5" style="border-top: 1px solid grey">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card" style="width: 14rem; border: none">
+            <div class="card-body">
+              <h5 class="card-title" style="color: #2d465e; font: 18px">
+                About Us
+              </h5>
+              <p class="card-text" style="font-size: 15px">
+                There live the blind texts. Separated they live in
+                Bookmarksgrove right at the coast of the Semantics, a large
+                language ocean.
+              </p>
+              <button type="button" class="btn btn-success">Learn More</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 pt-3">
+          <h5 class="card-title" style="color: #2d465e; font-size: 18px">
+            Navigation
+          </h5>
+          <div class="box">
+            <div class="row pt-3">
+              <div class="col">
+                <p style="font-size: 16px">Overview</p>
+              </div>
+              <div class="col">
+                <p style="font-size: 16px">Overview</p>
+              </div>
+            </div>
+            <div class="row pt-3">
+              <div class="col">
+                <p style="font-size: 16px">About us</p>
+              </div>
+              <div class="col">
+                <p style="font-size: 16px">About us</p>
+              </div>
+            </div>
+            <div class="row pt-3">
+              <div class="col">
+                <p style="font-size: 16px">Find Buyers</p>
+              </div>
+              <div class="col">
+                <p style="font-size: 16px">Find Buyers</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 pt-2">
+          <div class="card" style="width: 14rem; border: none">
+            <div class="card-body">
+              <h5 class="card-title" style="color: #2d465e; font-size: 18px">
+                Recent Posts
+              </h5>
+              <h6
+                class="card-subtitle mb-2 text-body-secondary"
+                style="font-size: 14px; color: grey"
+              >
+                3 May ,20
+              </h6>
+              <h6 class="card-title" style="font-size: 16px">
+                Separated they live in Bookmarks.
+              </h6>
+              <h6
+                class="card-subtitle mb-2 text-body-secondary"
+                style="font-size: 14px; color: grey"
+              >
+                3 May,20
+              </h6>
+              <h6 class="card-title" style="font-size: 16px">
+                Separated they live in Bookmarksgrove right
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 pt-3">
+          <h5 class="card-title" style="color: #2d465e; font-size: 18px">
+            Connect
+          </h5>
+          <img src="icon.PNG" class="img-fluid" alt="..." />
+          <h5 class="card-title" style="color: #2d465e; font-size: 18px">
+            Subscribe
+          </h5>
+          <div class="form-floating mb-3 p-1 mt-2">
+            <input
+              type="email"
+              class="form-control"
+              id="floatingInput"
+              placeholder="name@example.com"
+            />
+            <label for="floatingInput">Email address</label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="container p-5"
+      style="
+        border-top: 1px solid grey;
+        display: flex;
+        justify-content: space-between;
+      "
+    >
+      <div class="text1">© Copyright Active. All Rights Reserved</div>
+      <div class="text2 ml-5">Designed By Muhammad Raheel Abbas</div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
